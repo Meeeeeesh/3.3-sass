@@ -1,0 +1,12 @@
+.profile {
+  position: absolute;
+}
+.profile__avatar {
+  @include size(50px);
+}
+.profile__bio {
+  padding: 20px;
+}
+.profile__footer {
+  margin: 20px 0 0;
+}

@@ -1,0 +1,34 @@
+.right-column {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  font-size: 1.5vw;
+  margin-left: 50%;
+  padding: 40px;
+  line-height: 27px;
+  color: #262682;
+  overflow: scroll
+  @media all and (max-width: 950px) {
+    position: relative;
+    margin: 0;
+    width: auto;
+  }
+}
+.right-Button {
+  text-align: right;
+  text-decoration: none;
+  height: 25%;
+}
+  > a {
+  color: #262682;
+  text-decoration: none;
+  }
+  > a:hover {
+  color: #f09523;
+  }
+.right-Button > img {
+  width: 100%;
+  height: auto;
+}

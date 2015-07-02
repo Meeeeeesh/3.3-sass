@@ -1,0 +1,108 @@
+// .post {
+//   position: relative;
+// }
+// .post__header {
+//   width: 50%;
+//   @include transform(translateY(-50%));
+// }
+// .post__headerNav {
+//   display: inline-block;
+// }
+// .post__content {
+//   width: 25%;
+// }
+// .post__footer {
+//   padding: 40px;
+// }
+.left-column {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+  background-image: url('../images/background.jpeg');
+  background-size: cover;
+  background-position: center center;
+  margin-right: 5%;
+  color: #FFF;
+  padding: 40px;
+  @media all and (min-width: 476px) and (max-width: 950px) {
+    @include adjust-column(475px) 
+  }
+  @media (max-width: 475px) {
+    @include adjust-column(725px)
+  }
+  > img {
+    display: block;
+    height: auto;
+  }
+} 
+.logo {
+  display: inline-block;
+  font-size: 25px;
+  margin: 10px;
+  @media (min-width: 476px) and (max-width: 950px) {
+    margin: 10px;
+  }
+  @media (max-width: 475px) {
+    margin: 5px;
+    display: block;
+  }
+}
+.left-Button {
+  display: inline-block;
+  float: right;
+  background: none;
+  color: inherit;
+  font-size: 20px;
+  border: 1px solid #fff;
+  margin: 5px;
+  @media (min-width: 476px) and (max-width: 950px) {
+    margin: 5px;
+  }
+  @media (max-width: 475px) {
+    margin: 0;
+    float: left;
+    display: block;
+  }
+}
+.left-Nav {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  > li {
+    display: inline-block;
+    @media all and (max-width: 475px) {
+      display: block;
+    }
+      &:after {
+      content: &harr;
+      }
+      &:last-of-type:after {
+      content: none;
+      }
+    > a {
+    text-decoration: none;
+    color: #fff;
+    }
+      &:hover {
+      color: #f09523;
+      }
+    }
+  }
+}
+.left-line {
+  width: auto;
+  height: 0;
+  border: 1px solid #fff
+}
+.head-text-a > h1 {
+  font-size: 47px;
+}
+.head-text-b > p {
+  margin: 40px;
+  font-size: 23px;
+}
+

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+}
+body {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  color: #262682;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: #f09523;
+    }
+  }
+}
+p {
+  margin: 0;
+}
+.container {
+}

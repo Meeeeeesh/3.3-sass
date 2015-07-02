@@ -1,0 +1,12 @@
+$adjusted-width: 475px;
+
+@media all and (min-width: 476px) and (max-width: 950px) {
+    @include adjust-column($img-height) {
+      position: relative;
+      width: auto;
+      top: 0;
+      margin: 0;
+      height: $img-height;
+    }
+  }
+

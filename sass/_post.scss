@@ -1,0 +1,16 @@
+.post {
+  position: relative;
+}
+.post__header {
+  width: 50%;
+  @include transform(translateY(-50%));
+}
+.post__headerNav {
+  display: inline-block;
+}
+.post__content {
+  width: 25%;
+}
+.post__footer {
+  padding: 40px;
+}

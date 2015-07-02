@@ -1,0 +1,22 @@
+$adjusted-width: 475px;
+// $fo
+
+// @mixin size($width, $height: $width) {
+//   width: $width;
+//   height: $height;
+// }
+// @mixin transform($val) {
+//   -webkit-transform: $val;
+//   transform: $val;
+// }
+
+@media all and (min-width: 476px) and (max-width: 950px) {
+    @include adjust-column($img-height) {
+      position: relative;
+      width: auto;
+      top: 0;
+      margin: 0;
+      height: $img-height;
+    }
+  }
+
